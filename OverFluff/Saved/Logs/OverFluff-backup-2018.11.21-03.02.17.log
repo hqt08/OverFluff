@@ -1,0 +1,992 @@
+﻿Log file open, 11/20/18 21:56:37
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: OverFluff
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 3.299270
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineFramework
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemSteam
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.342s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.21-CL-0
+LogInit: Engine Version: 4.21.0-0+++UE4+Release-4.21
+LogInit: Compatible Engine Version: 4.21.0-0+++UE4+Release-4.21
+LogInit: Net CL: 0
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz, GPU: NVIDIA GeForce GTX 1060 3GB
+LogInit: Compiled (64-bit): Nov 18 2018 14:45:41
+LogInit: Compiled with Visual C++: 19.15.26730.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.21
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Projects/OverFluff/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 22
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 26
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 27
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogStreaming: Display: Took  0.038s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2018.11.21-02.56.41:712][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2018.11.21-02.56.41:712][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2018.11.21-02.56.41:712][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:712][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:713][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2018.11.21-02.56.41:713][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2018.11.21-02.56.41:714][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2018.11.21-02.56.41:715][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:715][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:786][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.11.21-02.56.41:787][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.11.21-02.56.41:788][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.11.21-02.56.41:789][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.11.21-02.56.41:790][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.11.21-02.56.41:790][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.11.21-02.56.41:791][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.11.21-02.56.41:792][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.11.21-02.56.41:793][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:793][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.11.21-02.56.41:794][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.11.21-02.56.41:794][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.11.21-02.56.41:795][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.11.21-02.56.41:795][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.11.21-02.56.41:795][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.11.21-02.56.41:796][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.11.21-02.56.41:796][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.11.21-02.56.41:796][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.11.21-02.56.41:796][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.11.21-02.56.41:797][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.11.21-02.56.41:797][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.11.21-02.56.41:797][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.11.21-02.56.41:798][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:798][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.11.21-02.56.41:798][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.11.21-02.56.41:806][  0]LogInit: Selected Device Profile: [Windows]
+[2018.11.21-02.56.41:807][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.11.21-02.56.41:869][  0]LogHAL: Display: Platform has ~ 8 GB [8555069440 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.11.21-02.56.41:869][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2018.11.21-02.56.41:869][  0]LogInit: Going up to parent DeviceProfile []
+[2018.11.21-02.56.41:869][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:869][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.11.21-02.56.41:869][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.11.21-02.56.41:870][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.11.21-02.56.41:871][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.11.21-02.56.41:872][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:872][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.11.21-02.56.41:873][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.11.21-02.56.41:876][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.11.21-02.56.41:877][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.11.21-02.56.41:878][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OverFluff/Saved/Config/Windows/Scalability.ini]
+[2018.11.21-02.56.41:878][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.11.21-02.56.41:878][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.11.21-02.56.41:878][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2018.11.21-02.56.41:883][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2018.11.21-02.56.41:884][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../OverFluff/Saved/Config/Windows/Engine.ini]
+[2018.11.21-02.56.41:930][  0]LogInit: Computer: DESKTOP-F1IVQG7
+[2018.11.21-02.56.41:930][  0]LogInit: User: TammiTay
+[2018.11.21-02.56.41:930][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.11.21-02.56.41:931][  0]LogInit: High frequency timer resolution =2.929689 MHz
+[2018.11.21-02.56.41:931][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2018.11.21-02.56.41:932][  0]LogMemory: Platform Memory Stats for Windows
+[2018.11.21-02.56.41:932][  0]LogMemory: Process Physical Memory: 101.55 MB used, 101.55 MB peak
+[2018.11.21-02.56.41:932][  0]LogMemory: Process Virtual Memory: 85.42 MB used, 85.42 MB peak
+[2018.11.21-02.56.41:932][  0]LogMemory: Physical Memory: 6534.84 MB used,  1623.91 MB free, 8158.75 MB total
+[2018.11.21-02.56.41:932][  0]LogMemory: Virtual Memory: 4630.38 MB used,  134213096.00 MB free, 134217728.00 MB total
+[2018.11.21-02.56.42:636][  0]LogInit: Using OS detected language (en-US).
+[2018.11.21-02.56.42:636][  0]LogInit: Using OS detected locale (en-US).
+[2018.11.21-02.56.42:693][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.11.21-02.56.43:644][  0]LogStreaming: Display: Took  0.991s to InitEngineTextLocalization.
+[2018.11.21-02.56.43:671][  0]LogInit: Setting process to per monitor DPI aware
+[2018.11.21-02.56.44:388][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.11.21-02.56.44:388][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.11.21-02.56.48:576][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.11.21-02.56.48:576][  0]LogD3D11RHI: D3D11 adapters:
+[2018.11.21-02.56.48:738][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 3GB' (Feature Level 11_0)
+[2018.11.21-02.56.48:738][  0]LogD3D11RHI:       2988/0/4079 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.11.21-02.56.48:746][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.11.21-02.56.48:746][  0]LogD3D11RHI:       0/0/4079 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.11.21-02.56.48:747][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.11.21-02.56.48:769][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.11.21-02.56.48:770][  0]LogD3D11RHI:     GPU DeviceId: 0x1c02 (for the marketing name, search the web for "GPU Device Id")
+[2018.11.21-02.56.48:777][  0]LogWindows: EnumDisplayDevices:
+[2018.11.21-02.56.48:777][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 3GB' (P:1 D:1)
+[2018.11.21-02.56.48:777][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:1)
+[2018.11.21-02.56.48:778][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:0)
+[2018.11.21-02.56.48:778][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:0)
+[2018.11.21-02.56.48:778][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2018.11.21-02.56.48:778][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 3GB
+[2018.11.21-02.56.48:779][  0]LogD3D11RHI:   Driver Version: 416.94 (internal:25.21.14.1694, unified:416.94)
+[2018.11.21-02.56.48:779][  0]LogD3D11RHI:      Driver Date: 11-12-2018
+[2018.11.21-02.56.48:779][  0]LogRHI: Texture pool is 2091 MB (70% of 2988 MB)
+[2018.11.21-02.56.48:838][  0]LogD3D11RHI: Async texture creation enabled
+[2018.11.21-02.56.49:130][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.11.21-02.56.49:722][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.11.21-02.56.49:810][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.11.21-02.56.49:882][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.11.21-02.56.49:949][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.11.21-02.56.50:063][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.11.21-02.56.50:191][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.11.21-02.56.50:341][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.11.21-02.56.50:423][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.11.21-02.56.50:492][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.11.21-02.56.50:640][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:640][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:640][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:641][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:642][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.21-02.56.50:747][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.11.21-02.56.51:055][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.11.21-02.56.51:055][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.11.21-02.56.51:199][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.11.21-02.56.51:199][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.11.21-02.56.51:303][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.11.21-02.56.51:303][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.11.21-02.56.51:303][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.11.21-02.56.53:261][  0]LogShaderCompilers: Guid format shader working directory is 31 characters bigger than the processId version (../../../OverFluff/Intermediate/Shaders/WorkingDirectory/13652/).
+[2018.11.21-02.56.53:261][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Tammi Tay/AppData/Local/Temp/UnrealShaderWorkingDir/1E04107344C2394588BF73B334979D7E/'.
+[2018.11.21-02.56.53:275][  0]LogXGEController: Cleaning working directory: C:/Users/Tammi Tay/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.11.21-02.56.53:276][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.11.21-02.56.53:276][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.11.21-02.56.53:276][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.11.21-02.56.56:186][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.11.21-02.56.56:973][  0]LogDerivedDataCache: Loaded boot cache 0.79s 73MB ../../../OverFluff/DerivedDataCache/Boot.ddc.
+[2018.11.21-02.56.56:974][  0]LogDerivedDataCache: Display: Loaded Boot cache: ../../../OverFluff/DerivedDataCache/Boot.ddc
+[2018.11.21-02.56.56:974][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../OverFluff/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.11.21-02.56.56:974][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.11.21-02.56.56:975][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.11.21-02.56.56:975][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2018.11.21-02.56.56:991][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2018.11.21-02.56.56:991][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.11.21-02.56.56:991][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.11.21-02.56.57:377][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.11.21-02.56.57:746][  0]LogSlate: Using FreeType 2.6.0
+[2018.11.21-02.56.57:884][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.11.21-02.57.00:399][  0]LogAssetRegistry: FAssetRegistry took 0.0460 seconds to start up
+[2018.11.21-02.57.16:546][  0]LogInit: Selected Device Profile: [Windows]
+[2018.11.21-02.57.18:592][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.11.21-02.57.18:613][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.11.21-02.57.18:613][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.11.21-02.57.18:613][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2018.11.21-02.57.18:613][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2018.11.21-02.57.19:511][  0]LogNetVersion: OverFluff 1.0.0, NetCL: 0, EngineNetVer: 5, GameNetVer: 0 (Checksum: 735888774)
+[2018.11.21-02.57.25:712][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.310285 seconds
+[2018.11.21-02.57.25:753][  0]LogUObjectArray: 39731 objects as part of root set at end of initial load.
+[2018.11.21-02.57.25:753][  0]LogUObjectAllocator: 6907712 out of 0 bytes used by permanent object pool.
+[2018.11.21-02.57.25:753][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.11.21-02.57.37:842][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.37:842][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.37:861][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:861][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:861][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:861][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:861][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.37:861][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.37:861][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:861][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:861][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:861][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.37:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.37:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:862][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.37:862][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.37:863][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:863][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:863][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.37:863][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.37:863][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.37:863][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.37:863][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:863][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:864][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.37:864][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:864][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:864][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.37:864][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.37:864][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:865][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:865][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:865][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:865][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.37:865][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.37:865][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:865][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:865][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.37:865][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.37:869][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.37:869][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.37:869][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:869][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:870][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.37:870][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:870][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:870][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.11.21-02.57.37:870][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.11.21-02.57.37:870][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:871][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:871][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:871][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:871][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.11.21-02.57.37:871][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.11.21-02.57.37:871][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:871][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:871][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:871][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:871][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.37:872][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.37:872][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:872][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:872][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:872][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:872][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.37:872][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.37:873][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:873][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:873][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:873][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:873][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.11.21-02.57.37:873][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.11.21-02.57.37:873][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:873][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:873][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:874][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:874][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.11.21-02.57.37:874][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.11.21-02.57.37:874][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:874][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:874][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:874][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:874][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.11.21-02.57.37:874][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:875][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.37:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.11.21-02.57.37:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.11.21-02.57.37:876][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:877][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:877][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:877][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:877][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.37:877][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.37:877][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:877][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:877][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:877][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:878][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:878][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.37:879][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.37:879][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.45:967][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.11.21-02.57.46:125][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.11.21-02.57.47:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.47:947][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.47:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:947][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:947][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.47:947][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.47:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:947][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.11.21-02.57.47:948][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:948][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.47:949][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:949][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_24x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:950][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png' error.
+[2018.11.21-02.57.47:950][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Linux/Platform_Linux_128x.png
+[2018.11.21-02.57.47:952][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.47:952][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.47:952][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:952][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:952][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:952][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:953][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:953][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:954][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.11.21-02.57.47:954][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.11.21-02.57.47:954][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:954][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:954][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:954][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:954][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.47:954][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.47:954][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:954][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:955][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:955][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:955][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.47:955][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.47:955][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:955][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:956][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:956][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:956][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.11.21-02.57.47:960][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.11.21-02.57.47:960][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:960][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:960][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:961][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:962][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.11.21-02.57.47:962][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.11.21-02.57.47:962][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:963][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:963][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:963][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:963][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.11.21-02.57.47:963][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.11.21-02.57.47:964][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:964][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:964][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:964][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:964][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.47:964][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.47:964][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:964][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:965][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:965][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:966][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.11.21-02.57.47:966][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.11.21-02.57.47:966][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:966][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:966][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:966][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:966][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.11.21-02.57.47:966][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.11.21-02.57.47:966][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:967][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:968][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:968][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:968][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.11.21-02.57.47:969][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.11.21-02.57.47:969][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:969][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:969][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:970][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:970][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.47:970][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.47:970][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:970][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:970][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:971][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:971][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.11.21-02.57.47:971][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.11.21-02.57.47:971][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:971][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:971][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:971][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:971][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.11.21-02.57.47:971][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.11.21-02.57.47:972][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:974][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:975][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:976][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:976][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.11.21-02.57.47:976][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.11.21-02.57.47:976][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:976][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:977][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:978][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:978][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.11.21-02.57.47:978][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.11.21-02.57.47:978][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:978][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.47:978][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.11.21-02.57.47:978][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.11.21-02.57.52:653][  0]SourceControl: Source control is disabled
+[2018.11.21-02.57.52:654][  0]SourceControl: Source control is disabled
+[2018.11.21-02.57.52:833][  0]SourceControl: Source control is disabled
+[2018.11.21-02.57.52:955][  0]SourceControl: Source control is disabled
+[2018.11.21-02.57.57:971][  0]LogOnline: Display: STEAM: Loading Steam SDK 1.39
+[2018.11.21-02.57.58:119][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.11.21-02.57.58:840][  0]LogOcInput: OculusInput pre-init called
+[2018.11.21-02.58.01:163][  0]LogEngine: Initializing Engine...
+[2018.11.21-02.58.01:193][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.11.21-02.58.01:249][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.11.21-02.58.01:249][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.11.21-02.58.01:255][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.006 s
+[2018.11.21-02.58.01:255][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.11.21-02.58.02:295][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.11.21-02.58.03:043][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.11.21-02.58.03:219][  0]LogInit: XAudio2 using 'Headset Earphone (HyperX Virtual Surround Sound)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.21-02.58.03:252][  0]LogInit: FAudioDevice initialized.
+[2018.11.21-02.58.03:253][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.11.21-02.58.03:437][  0]LogDerivedDataCache: Saved boot cache 0.18s 73MB ../../../OverFluff/DerivedDataCache/Boot.ddc.
+[2018.11.21-02.58.03:448][  0]LogInit: Texture streaming: Enabled
+[2018.11.21-02.58.03:862][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.11.21-02.58.03:867][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={E573B196-4C6F-EF2C-D580-AA8C9C28DC9B}
+[2018.11.21-02.58.04:267][  0]LogInit: Transaction tracking system initialized
+[2018.11.21-02.58.05:236][  0]BlueprintLog: New page: Editor Load
+[2018.11.21-02.58.09:341][  0]LocalizationService: Localization service is disabled
+[2018.11.21-02.58.16:073][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/OverFluff/OverFluff/Content/' took 0.05s
+[2018.11.21-02.58.16:073][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.11.21-02.58.16:097][  0]LogCook: Display: Mobile HDR setting 1
+[2018.11.21-02.58.16:164][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.11.21-02.58.16:165][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.11.21-02.58.16:165][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.11.21-02.58.16:166][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.11.21-02.58.16:166][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.11.21-02.58.23:711][  0]SourceControl: Source control is disabled
+[2018.11.21-02.58.23:750][  0]Cmd: MAP LOAD FILE="../../../OverFluff/Content/OverFluff/Maps/LobbyMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.11.21-02.58.23:796][  0]LightingResults: New page: Lighting Build
+[2018.11.21-02.58.24:081][  0]MapCheck: New page: Map Check
+[2018.11.21-02.58.24:081][  0]LightingResults: New page: Lighting Build
+[2018.11.21-02.58.25:549][  0]LogAIModule: Creating AISystem for world LobbyMap
+[2018.11.21-02.58.25:703][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.11.21-02.58.26:128][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.11.21-02.58.26:128][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.201ms to complete.
+[2018.11.21-02.58.26:158][  0]LogFileHelpers: Loading map 'LobbyMap' took 2.433
+[2018.11.21-02.58.28:150][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.58.28:182][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.58.28:191][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.58.28:199][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.58.28:396][  0]LogCollectionManager: Loaded 0 collections in 0.018658 seconds
+[2018.11.21-02.58.28:556][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/OverFluff/OverFluff/Saved/Collections/' took 0.01s
+[2018.11.21-02.58.28:556][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/OverFluff/OverFluff/Content/Developers/TammiTay/Collections/' took 0.01s
+[2018.11.21-02.58.28:556][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/OverFluff/OverFluff/Content/Collections/' took 0.01s
+[2018.11.21-02.58.28:556][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.11.21-02.58.28:586][  0]LogContentBrowser: Native class hierarchy populated in 0.0281 seconds. Added 2673 classes and 636 folders.
+[2018.11.21-02.58.28:779][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.11.21-02.58.28:869][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.28:956][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:011][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:039][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:056][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:095][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:101][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:108][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:115][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:139][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:146][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:163][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:171][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:178][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:185][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:192][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:200][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:207][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:220][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:229][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:235][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:243][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:249][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:256][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:286][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.29:293][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.11.21-02.58.30:165][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.11.21-02.58.30:288][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.11.21-02.58.31:404][  0]LogSlate: Took 0.020510 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.11.21-02.58.31:464][  0]LogSlate: Took 0.019292 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.11.21-02.58.31:543][  0]LogSlate: Took 0.018047 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.11.21-02.58.32:355][  0]LogRenderer: Reallocating scene render targets to support 1136x576 Format 10 NumSamples 1 (Frame:1).
+[2018.11.21-02.58.33:504][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.11.21-02.58.33:504][  0]LogLoad: (Engine Initialization) Total time: 126.51 seconds
+[2018.11.21-02.58.33:505][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.11.21-02.58.34:190][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.11.21-02.58.34:561][  0]LogSlate: Took 0.034851 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.11.21-02.58.34:885][  2]LogAssetRegistry: Asset discovery search completed in 94.5115 seconds
+[2018.11.21-02.58.34:923][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000018 seconds (found 0 objects)
+[2018.11.21-02.58.34:926][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.002381 seconds (updated 0 objects)
+[2018.11.21-02.59.06:564][305]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.21-02.59.06:631][305]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2018.11.21-02.59.06:695][305]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel' has LevelScriptBlueprint '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel.LobbyMap' with GeneratedClass '/Game/OverFluff/Maps/LobbyMap.LobbyMap_C' with ClassGeneratedBy '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel.LobbyMap'
+[2018.11.21-02.59.06:716][305]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.21-02.59.06:761][305]PIE: New page: PIE session: LobbyMap (Nov 20, 2018, 4:59:06 PM)
+[2018.11.21-02.59.06:851][305]LogPlayLevel: Creating play world package: /Game/OverFluff/Maps/UEDPIE_1_LobbyMap
+[2018.11.21-02.59.06:893][305]LogPlayLevel: PIE: StaticDuplicateObject took: (0.041388s)
+[2018.11.21-02.59.06:894][305]LogAIModule: Creating AISystem for world LobbyMap
+[2018.11.21-02.59.06:911][305]LogPlayLevel: PIE: World Init took: (0.017754s)
+[2018.11.21-02.59.06:911][305]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OverFluff/Maps/LobbyMap.LobbyMap to /Game/OverFluff/Maps/UEDPIE_1_LobbyMap.LobbyMap (0.060292s)
+[2018.11.21-02.59.06:967][305]LogInit: XAudio2 using 'Headset Earphone (HyperX Virtual Surround Sound)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.21-02.59.07:009][305]LogInit: FAudioDevice initialized.
+[2018.11.21-02.59.07:036][305]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.59.07:186][305]LogLoad: Game class is 'LobbyGameMode_C'
+[2018.11.21-02.59.07:340][305]LogWorld: Bringing World /Game/OverFluff/Maps/UEDPIE_1_LobbyMap.LobbyMap up for play (max tick rate 0) at 2018.11.20-21.59.07
+[2018.11.21-02.59.07:369][305]LogWorld: Bringing up level for play took: 0.029609
+[2018.11.21-02.59.07:615][305]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 20 classes and 0 folders.
+[2018.11.21-02.59.07:697][305]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.07:714][305]LogTemp: Display: ParseSettings for IpNetDriver_0
+[2018.11.21-02.59.07:714][305]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.07:720][305]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2018.11.21-02.59.07:720][305]PacketHandlerLog: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2018.11.21-02.59.07:720][305]LogInit: WinSock: Socket queue 131072 / 131072
+[2018.11.21-02.59.07:733][305]LogInit: WinSock: I am DESKTOP-F1IVQG7 (10.0.0.39:0)
+[2018.11.21-02.59.07:744][305]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2018.11.21-02.59.07:745][305]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 17777
+[2018.11.21-02.59.07:836][305]PIE: Play in editor start time for /Game/OverFluff/Maps/UEDPIE_1_LobbyMap 0.217
+[2018.11.21-02.59.07:861][305]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.11.21-02.59.07:865][305]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.59.07:915][305]LogNet: Browse: 127.0.0.1:17777//Game/OverFluff/Maps/LobbyMap
+[2018.11.21-02.59.07:915][305]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.07:916][305]LogTemp: Display: ParseSettings for IpNetDriver_1
+[2018.11.21-02.59.07:916][305]LogTemp: Display: ParseSettings for PendingNetDriver
+[2018.11.21-02.59.07:916][305]LogInit: WinSock: Socket queue 32768 / 32768
+[2018.11.21-02.59.07:931][305]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2018.11.21-02.59.07:946][305]LogNet: Game client on port 17777, rate 10000
+[2018.11.21-02.59.07:949][305]PIE: Play in editor start time for /Game/OverFluff/Maps/LobbyMap 0.331
+[2018.11.21-02.59.07:955][305]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel' has LevelScriptBlueprint '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel.LobbyMap' with GeneratedClass '/Game/OverFluff/Maps/LobbyMap.LobbyMap_C' with ClassGeneratedBy '/Game/OverFluff/Maps/LobbyMap.LobbyMap:PersistentLevel.LobbyMap'
+[2018.11.21-02.59.07:958][305]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49497
+[2018.11.21-02.59.07:959][305]LogHandshake: SendConnectChallenge. Timestamp: 0.333334, Cookie: 240081113129106117098230234201190122231099221049099212253120
+[2018.11.21-02.59.08:010][305]LogHandshake: SendChallengeResponse. Timestamp: 0.333334, Cookie: 240081113129106117098230234201190122231099221049099212253120
+[2018.11.21-02.59.08:066][305]LogRenderer: Reallocating scene render targets to support 1136x636 Format 10 NumSamples 1 (Frame:1).
+[2018.11.21-02.59.08:188][306]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49497
+[2018.11.21-02.59.08:193][306]LogHandshake: SendChallengeAck. InCookie: 240081113129106117098230234201190122231099221049099212253120
+[2018.11.21-02.59.08:193][306]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49497
+[2018.11.21-02.59.08:200][306]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2018.11.21-02.59.08:200][306]LogNet: NotifyAcceptedConnection: Name: LobbyMap, TimeStamp: 11/20/18 21:59:08, [UNetConnection] RemoteAddr: 127.0.0.1:49497, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2018.11.21-02.59.08:201][306]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49497, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2018.11.21-02.59.08:226][306]LogNetVersion: OverFluff 1.0.0.0, NetCL: 0, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2356889875)
+[2018.11.21-02.59.08:226][306]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: PendingNetDriver IpNetDriver_1, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2018.11.21-02.59.08:259][307]LogNet: NotifyAcceptingChannel Control 0 server World /Game/OverFluff/Maps/UEDPIE_1_LobbyMap.LobbyMap: Accepted
+[2018.11.21-02.59.08:259][307]LogNet: Remote platform little endian=1
+[2018.11.21-02.59.08:260][307]LogNet: This platform little endian=1
+[2018.11.21-02.59.08:280][308]LogNet: Login request: /Game/OverFluff/Maps/LobbyMap?Name=DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078 userId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078 platform: NULL
+[2018.11.21-02.59.08:281][308]LogNet: Welcomed by server (Level: /Game/OverFluff/Maps/UEDPIE_1_LobbyMap, Game: /Game/OverFluff/Project/LobbyGameMode.LobbyGameMode_C)
+[2018.11.21-02.59.08:289][308]LogLoad: LoadMap: 127.0.0.1:17777//Game/OverFluff/Maps/UEDPIE_1_LobbyMap?game=/Game/OverFluff/Project/LobbyGameMode.LobbyGameMode_C
+[2018.11.21-02.59.08:316][308]LogAIModule: Creating AISystem for world LobbyMap
+[2018.11.21-02.59.08:316][308]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.08:318][308]LogWorld: Bringing World /Game/OverFluff/Maps/UEDPIE_2_LobbyMap.LobbyMap up for play (max tick rate 0) at 2018.11.20-21.59.08
+[2018.11.21-02.59.08:318][308]LogWorld: Bringing up level for play took: 0.000385
+[2018.11.21-02.59.08:319][308]LogLoad: Took 0.029836 seconds to LoadMap(/Game/OverFluff/Maps/UEDPIE_1_LobbyMap)
+[2018.11.21-02.59.08:341][309]LogNet: Client netspeed is 10000
+[2018.11.21-02.59.08:341][309]LogNet: Join request: /Game/OverFluff/Maps/LobbyMap?Name=DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078?SplitscreenCount=1
+[2018.11.21-02.59.08:342][309]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2018.11.21-02.59.08:388][309]LogNet: Join succeeded: DESKTOP-F1IVQG7-7114
+[2018.11.21-02.59.08:410][310]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2018.11.21-02.59.08:423][311]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2018.11.21-02.59.32:910][172]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.21-02.59.33:041][187]LogNet: Browse: /Game/OverFluff/Maps/OverFluffMap?listen
+[2018.11.21-02.59.33:041][187]LogLoad: LoadMap: /Game/OverFluff/Maps/OverFluffMap?listen
+[2018.11.21-02.59.33:041][187]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2018.11.21-02.59.33:041][187]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2018.11.21-02.59.33:062][187]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:49497, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: OverFluffPlayerControllerBP_C_1, Owner: OverFluffPlayerControllerBP_C_1, UniqueId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078
+[2018.11.21-02.59.33:062][187]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49497, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: OverFluffPlayerControllerBP_C_1, Owner: OverFluffPlayerControllerBP_C_1, UniqueId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078, Channels: 11, Time: 2018.11.21-02.59.33
+[2018.11.21-02.59.33:062][187]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49497, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: OverFluffPlayerControllerBP_C_1, Owner: OverFluffPlayerControllerBP_C_1, UniqueId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078
+[2018.11.21-02.59.33:107][187]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2018.11.21-02.59.33:142][187]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.59.34:625][187]LogAIModule: Creating AISystem for world OverFluffMap
+[2018.11.21-02.59.34:640][187]LogLoad: Game class is 'OverFluffGameModeBP_C'
+[2018.11.21-02.59.34:640][187]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.34:641][187]LogTemp: Display: ParseSettings for IpNetDriver_2
+[2018.11.21-02.59.34:641][187]LogTemp: Display: ParseSettings for GameNetDriver
+[2018.11.21-02.59.34:641][187]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2018.11.21-02.59.34:643][187]PacketHandlerLog: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2018.11.21-02.59.34:643][187]LogInit: WinSock: Socket queue 131072 / 131072
+[2018.11.21-02.59.34:644][187]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2018.11.21-02.59.34:645][187]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 7777
+[2018.11.21-02.59.34:714][187]LogWorld: Bringing World /Game/OverFluff/Maps/UEDPIE_1_OverFluffMap.OverFluffMap up for play (max tick rate 0) at 2018.11.20-21.59.34
+[2018.11.21-02.59.34:725][187]LogWorld: Bringing up level for play took: 0.079100
+[2018.11.21-02.59.34:726][187]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2018.11.21-02.59.34:958][187]LogLoad: Took 1.916837 seconds to LoadMap(/Game/OverFluff/Maps/OverFluffMap)
+[2018.11.21-02.59.35:004][187]LogNet: Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2018.11.21-02.59.35:006][187]LogNet: Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2018.11.21-02.59.35:020][187]LogNet: NetworkFailure: FailureReceived, Error: 'Host closed the connection.'
+[2018.11.21-02.59.35:039][187]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: OverFluffPlayerControllerBP_C_0, Owner: OverFluffPlayerControllerBP_C_0, UniqueId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078, Channels: 11, Time: 2018.11.21-02.59.35
+[2018.11.21-02.59.35:040][187]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: OverFluffPlayerControllerBP_C_0, Owner: OverFluffPlayerControllerBP_C_0, UniqueId: NULL:DESKTOP-F1IVQG7-7114EA584FF1A14873C3C298E98C7078
+[2018.11.21-02.59.35:040][187]LogNet: Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2018.11.21-02.59.35:040][187]LogNet: Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2018.11.21-02.59.35:040][187]LogNet: NetworkFailure: ConnectionLost, Error: 'Your connection to the host has been lost.'
+[2018.11.21-02.59.35:156][188]LogNet: Browse: /Game/OverFluff/Maps/LobbyMap?closed
+[2018.11.21-02.59.35:158][188]LogNet: Connection failed; returning to Entry
+[2018.11.21-02.59.35:244][188]LogLoad: LoadMap: /Game/OverFluff/Maps/LobbyMap?closed
+[2018.11.21-02.59.35:244][188]LogNet: World NetDriver shutdown IpNetDriver_1 [GameNetDriver]
+[2018.11.21-02.59.35:244][188]LogNet: DestroyNamedNetDriver IpNetDriver_1 [GameNetDriver]
+[2018.11.21-02.59.35:245][188]LogExit: GameNetDriver IpNetDriver_1 shut down
+[2018.11.21-02.59.35:246][188]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.21-02.59.35:275][188]LogPlayLevel: Creating play world package: /Game/OverFluff/Maps/UEDPIE_2_LobbyMap
+[2018.11.21-02.59.35:283][188]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007404s)
+[2018.11.21-02.59.35:283][188]LogAIModule: Creating AISystem for world LobbyMap
+[2018.11.21-02.59.35:284][188]LogPlayLevel: PIE: World Init took: (0.000603s)
+[2018.11.21-02.59.35:284][188]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OverFluff/Maps/LobbyMap.LobbyMap to /Game/OverFluff/Maps/UEDPIE_2_LobbyMap.LobbyMap (0.008448s)
+[2018.11.21-02.59.35:284][188]LogLoad: Game class is 'LobbyGameMode_C'
+[2018.11.21-02.59.35:285][188]LogWorld: Bringing World /Game/OverFluff/Maps/UEDPIE_2_LobbyMap.LobbyMap up for play (max tick rate 0) at 2018.11.20-21.59.35
+[2018.11.21-02.59.35:285][188]LogWorld: Bringing up level for play took: 0.000579
+[2018.11.21-02.59.35:286][188]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.11.21-02.59.35:288][188]LogLoad: Took 0.044667 seconds to LoadMap(/Game/OverFluff/Maps/UEDPIE_2_LobbyMap)
