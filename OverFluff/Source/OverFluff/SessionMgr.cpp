@@ -1,5 +1,7 @@
 #include "SessionMgr.h"
 
+#include "OnlineSubsystemUtils.h"
+
 USessionMgr* USessionMgr::Mgr = nullptr;
 
 USessionMgr* USessionMgr::Get()
@@ -24,6 +26,9 @@ USessionMgr::USessionMgr(const FObjectInitializer& ObjectInitializer)
 
 	/** Bind function for JOINING a Session */
 	OnJoinSessionCompleteDelegate = FOnJoinSessionCompleteDelegate::CreateUObject(this, &USessionMgr::OnJoinSessionComplete);
+
+	/** Bind function for JOINING a Session */
+	OnDestroySessionCompleteDelegate = FOnDestroySessionCompleteDelegate::CreateUObject(this, &USessionMgr::OnDestroySessionComplete);
 }
 
 USessionMgr::~USessionMgr()
@@ -32,7 +37,7 @@ USessionMgr::~USessionMgr()
 	Mgr = nullptr;
 }
 
-bool USessionMgr::CreateSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers, TFunction<void()> OnSuccess)
+bool USessionMgr::CreateSession(const UWorld* World, TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers, TFunction<void()> OnSuccess)
 {
 	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get())
 	{
@@ -55,11 +60,16 @@ bool USessionMgr::CreateSession(TSharedPtr<const FUniqueNetId> UserId, FName Ses
 			// Set the session map
 			SessionSettings->Set(SETTING_MAPNAME, FString("OverFluffMap"), EOnlineDataAdvertisementType::ViaOnlineService);
 
+			// Set the session name
+			FOnlineSessionSetting compoundSessionName;
+			compoundSessionName.AdvertisementType = EOnlineDataAdvertisementType::ViaOnlineService;
+			compoundSessionName.Data = *SessionName.ToString();
+			SessionSettings->Settings.Add(FName("SESSION_NAME"), compoundSessionName);
+
 			// Set the delegate to the Handle of the SessionInterface
 			OnCreateSessionCompleteDelegateHandle = SessionInterface->AddOnCreateSessionCompleteDelegate_Handle(OnCreateSessionCompleteDelegate);
 			OnCreateSuccess = OnSuccess;
 
-			/* SessionInterface->CreateSession(*PlayerState->UniqueId.GetUniqueNetId(), GameSessionName, SessionSettings); */
 			return SessionInterface->CreateSession(*UserId, SessionName, *SessionSettings);
 		}
 	}
@@ -115,11 +125,11 @@ void USessionMgr::OnStartOnlineGameComplete(FName SessionName, bool bWasSuccessf
 	}
 }
 
-bool USessionMgr::JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult, TFunction<void(IOnlineSessionPtr SessionInterface)> OnComplete)
+bool USessionMgr::JoinSession(const UWorld* World, TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult, TFunction<void(IOnlineSessionPtr SessionInterface)> OnComplete)
 {
 	bool bSuccessful = false;
 
-	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get())
+	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get() /*Online::GetSubsystem(World)*/)
 	{
 		IOnlineSessionPtr SessionInterface = OnlineSubsystem->GetSessionInterface();
 		if (SessionInterface.IsValid() && UserId.IsValid())
@@ -148,14 +158,9 @@ void USessionMgr::OnJoinSessionComplete(FName SessionName, EOnJoinSessionComplet
 	}
 }
 
-void USessionMgr::DestroySession()
+void USessionMgr::SearchSessions(const UWorld* World, TSharedPtr<const FUniqueNetId> UserId, bool bIsLAN, bool bIsPresence, TFunction<void(TSharedPtr<class FOnlineSessionSearch>)> OnComplete)
 {
-
-}
-
-void USessionMgr::SearchSessions(TSharedPtr<const FUniqueNetId> UserId, bool bIsLAN, bool bIsPresence, TFunction<void(TSharedPtr<class FOnlineSessionSearch>)> OnComplete)
-{
-	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get())
+	if (IOnlineSubsystem* const OnlineSubsystem = Online::GetSubsystem(World))
 	{
 		IOnlineSessionPtr SessionInterface = OnlineSubsystem->GetSessionInterface();
 
@@ -168,7 +173,7 @@ void USessionMgr::SearchSessions(TSharedPtr<const FUniqueNetId> UserId, bool bIs
 		{
 			SessionSearch->bIsLanQuery = bIsLAN;
 			SessionSearch->MaxSearchResults = 20;
-			//SessionSearch->PingBucketSize = 50;
+			SessionSearch->PingBucketSize = 50;
 
 			if (bIsPresence)
 			{
@@ -208,7 +213,8 @@ void USessionMgr::OnSearchSessionsComplete(bool bWasSuccessful)
 				for (auto SearchResult : SessionSearch->SearchResults)
 				{
 					// Return/Display the search results here
-					GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Session Owner Id: %d | Sessionname: %s "), *(SearchResult.Session.OwningUserId->ToString()), *(SearchResult.Session.OwningUserName)));
+					FString SessionName = SearchResult.Session.SessionSettings.Settings.FindRef("SESSION_NAME").Data.ToString();
+					GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Session Owner Id: %d | Sessionname: %s "), *(SearchResult.Session.OwningUserId->ToString()), *SessionName));
 				}
 			}
 
@@ -217,7 +223,35 @@ void USessionMgr::OnSearchSessionsComplete(bool bWasSuccessful)
 	}
 }
 
+
+void USessionMgr::DestroySession(const UWorld * World, TSharedPtr<const FUniqueNetId> UserId, FName SessionName)
+{
+	if (IOnlineSubsystem* const OnlineSubsystem = Online::GetSubsystem(World))
+	{
+		IOnlineSessionPtr SessionInterface = OnlineSubsystem->GetSessionInterface();
+		if (SessionInterface.IsValid())
+		{
+			OnDestroySessionCompleteDelegateHandle = SessionInterface->AddOnDestroySessionCompleteDelegate_Handle(OnDestroySessionCompleteDelegate);
+			SessionInterface->DestroySession(SessionName);
+		}
+	}
+}
+
+void USessionMgr::OnDestroySessionComplete(FName SessionName, bool bWasSuccessful)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OnDestroySessionsComplete bSuccess: %d"), bWasSuccessful));
+
+	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get())
+	{
+		IOnlineSessionPtr SessionInterface = OnlineSubsystem->GetSessionInterface();
+		if (SessionInterface.IsValid())
+		{
+			SessionInterface->ClearOnDestroySessionCompleteDelegate_Handle(OnDestroySessionCompleteDelegateHandle);
+		}
+	}
+}
+
 void USessionMgr::UpdateSession()
 {
-
+	
 }

@@ -6,11 +6,24 @@
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "OverFluffCharacter.h"
 #include "Engine/World.h"
+#include "UnrealNetwork.h"
+#include "DrawDebugHelpers.h"
+#include "NavigationPath.h"
+#include "GameFramework/PawnMovementComponent.h"
 
 AOverFluffPlayerController::AOverFluffPlayerController()
 {
 	bShowMouseCursor = true;
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
+	bReplicates = true;
+}
+
+void AOverFluffPlayerController::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AOverFluffPlayerController, CurrentLocation);
+	DOREPLIFETIME(AOverFluffPlayerController, CurrentRotation);
 }
 
 void AOverFluffPlayerController::PlayerTick(float DeltaTime)
@@ -22,6 +35,20 @@ void AOverFluffPlayerController::PlayerTick(float DeltaTime)
 	{
 		MoveToMouseCursor();
 	}
+
+	/*if (GetNetMode() == NM_Client)
+	{
+		if (APawn* const Pawn = GetPawn())
+		{
+			if (UPawnMovementComponent* const MovementComponent = Pawn->GetMovementComponent())
+			{
+				if (MovementComponent->IsMovingOnGround())
+				{
+					SERVER_ValidateMovement();
+				}
+			}
+		}
+	}*/
 }
 
 void AOverFluffPlayerController::SetupInputComponent()
@@ -66,6 +93,7 @@ void AOverFluffPlayerController::MoveToMouseCursor()
 		{
 			// We hit something, move there
 			SetNewMoveDestination(Hit.ImpactPoint);
+			SERVER_SetNewMoveDestination(Hit.ImpactPoint);
 		}
 	}
 }
@@ -80,7 +108,7 @@ void AOverFluffPlayerController::MoveToTouchLocation(const ETouchIndex::Type Fin
 	if (HitResult.bBlockingHit)
 	{
 		// We hit something, move there
-		SetNewMoveDestination(HitResult.ImpactPoint);
+		SERVER_SetNewMoveDestination(HitResult.ImpactPoint);
 	}
 }
 
@@ -99,6 +127,48 @@ void AOverFluffPlayerController::SetNewMoveDestination(const FVector DestLocatio
 	}
 }
 
+bool AOverFluffPlayerController::SERVER_SetNewMoveDestination_Validate(const FVector DestLocation)
+{
+	return true;
+}
+
+void AOverFluffPlayerController::SERVER_SetNewMoveDestination_Implementation(const FVector DestLocation)
+{
+	APawn* const Pawn = GetPawn();
+	if (Pawn)
+	{
+		float const Distance = FVector::Dist(DestLocation, Pawn->GetActorLocation());
+
+		// We need to issue move command only if far enough in order for walk animation to play correctly
+		if ((Distance > 120.0f))
+		{
+			UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, DestLocation);
+			
+			if (UNavigationPath* const NavPath = UAIBlueprintHelperLibrary::GetCurrentPath(this))
+			{
+				for (auto P : NavPath->PathPoints)
+				{
+					DrawDebugSphere(GetWorld(), P, 10, 12, FColor::Red, true, 5.0f);
+				}
+			}
+		}
+	}
+}
+
+bool AOverFluffPlayerController::SERVER_ValidateMovement_Validate()
+{
+	return true;
+}
+
+void AOverFluffPlayerController::SERVER_ValidateMovement_Implementation()
+{
+	if (APawn* const Pawn = GetPawn())
+	{
+		CurrentLocation = Pawn->GetActorLocation();
+		CurrentRotation = Pawn->GetActorRotation();
+	}
+}
+
 void AOverFluffPlayerController::OnSetDestinationPressed()
 {
 	// set flag to keep updating destination until released
@@ -109,4 +179,28 @@ void AOverFluffPlayerController::OnSetDestinationReleased()
 {
 	// clear flag to indicate we should stop updating the destination
 	bMoveToMouseCursor = false;
+}
+
+void AOverFluffPlayerController::OnRep_CurrentLocation()
+{
+	// Do client-side movement correction OnRep
+	if (APawn* const Pawn = GetPawn())
+	{
+		if (Pawn->GetActorLocation() != CurrentLocation)
+		{
+			Pawn->SetActorLocation(CurrentLocation);
+		}
+	}
+}
+
+void AOverFluffPlayerController::OnRep_CurrentRotation()
+{
+	// Do client-side movement correction OnRep
+	if (APawn* const Pawn = GetPawn())
+	{
+		if (Pawn->GetActorRotation() != CurrentRotation)
+		{
+			Pawn->SetActorRotation(CurrentRotation);
+		}
+	}
 }

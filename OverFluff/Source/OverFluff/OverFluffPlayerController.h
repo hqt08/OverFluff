@@ -15,9 +15,6 @@ public:
 	AOverFluffPlayerController();
 
 protected:
-	/** True if the controlled character should navigate to the mouse cursor. */
-	uint32 bMoveToMouseCursor : 1;
-
 	// Begin PlayerController interface
 	virtual void PlayerTick(float DeltaTime) override;
 	virtual void SetupInputComponent() override;
@@ -31,13 +28,35 @@ protected:
 
 	/** Navigate player to the current touch location. */
 	void MoveToTouchLocation(const ETouchIndex::Type FingerIndex, const FVector Location);
-	
-	/** Navigate player to the given world location. */
-	void SetNewMoveDestination(const FVector DestLocation);
 
 	/** Input handlers for SetDestination action. */
 	void OnSetDestinationPressed();
 	void OnSetDestinationReleased();
+
+	void SetNewMoveDestination(const FVector DestLocation);
+
+	///** Navigate player to the given world location. */
+	UFUNCTION(reliable, server, WithValidation)
+	void SERVER_SetNewMoveDestination(const FVector DestLocation);
+
+	UFUNCTION(reliable, server, WithValidation)
+	void SERVER_ValidateMovement();
+
+	UFUNCTION()
+	void OnRep_CurrentLocation();
+
+	UFUNCTION()
+	void OnRep_CurrentRotation();
+
+protected:
+	/** True if the controlled character should navigate to the mouse cursor. */
+	uint32 bMoveToMouseCursor : 1;
+
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentLocation)
+	FVector CurrentLocation;
+
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentRotation)
+	FRotator CurrentRotation;
 };
 
 

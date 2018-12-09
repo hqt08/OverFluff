@@ -16,7 +16,7 @@ void UOverFluffGameInstance::RequestHostSession(const APlayerController* const P
 				TFunction<void()> OnSuccess = [this]() { UGameplayStatics::OpenLevel(GetWorld(), "OverFluffMap", true, "listen"); };
 
 				const TSharedPtr<const FUniqueNetId>& NetId = PlayerState->UniqueId.GetUniqueNetId();
-				SessionMgr->CreateSession(NetId, SessionName, bIsLAN, bIsPresence, MaxNumPlayers, OnSuccess);
+				SessionMgr->CreateSession(PlayerController->GetWorld(), NetId, SessionName, bIsLAN, bIsPresence, MaxNumPlayers, OnSuccess);
 			}
 		}
 	}
@@ -47,7 +47,7 @@ void UOverFluffGameInstance::RequestFindSessions(const APlayerController* const 
 					}
 				};
 
-				SessionMgr->SearchSessions(PlayerState->UniqueId.GetUniqueNetId(), bIsLAN, bIsPresence, OnSearchComplete);
+				SessionMgr->SearchSessions(PlayerController->GetWorld(), PlayerState->UniqueId.GetUniqueNetId(), bIsLAN, bIsPresence, OnSearchComplete);
 			}
 		}
 	}
@@ -73,7 +73,21 @@ void UOverFluffGameInstance::RequestJoinSession(APlayerController* const PlayerC
 					}
 				};
 
-				SessionMgr->JoinSession(PlayerState->UniqueId.GetUniqueNetId(), SessionName, SearchResultBP.OnlineResult, OnJoinComplete);
+				SessionMgr->JoinSession(PlayerController->GetWorld(), PlayerState->UniqueId.GetUniqueNetId(), SessionName, SearchResultBP.OnlineResult, OnJoinComplete);
+			}
+		}
+	}
+}
+
+void UOverFluffGameInstance::RequestEndSession(APlayerController* const PlayerController, FName SessionName)
+{
+	if (PlayerController)
+	{
+		if (const APlayerState* const PlayerState = PlayerController->PlayerState)
+		{
+			if (USessionMgr* const SessionMgr = USessionMgr::Get())
+			{
+				SessionMgr->DestroySession(PlayerController->GetWorld(), PlayerState->UniqueId.GetUniqueNetId(), SessionName);
 			}
 		}
 	}

@@ -34,4 +34,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void RequestJoinSession(APlayerController* const PlayerController, FName SessionName, const FBlueprintSessionResult& SearchResultBP);
+
+	UFUNCTION(BlueprintCallable)
+	void RequestEndSession(APlayerController* const PlayerController, FName SessionName);
 };
+
