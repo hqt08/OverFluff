@@ -12,7 +12,10 @@
 #include "Materials/Material.h"
 #include "Engine/World.h"
 
-AOverFluffCharacter::AOverFluffCharacter()
+#include "OverFluffMovementComponent.h"
+
+AOverFluffCharacter::AOverFluffCharacter(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<UOverFluffMovementComponent>(ACharacter::CharacterMovementComponentName))
 {
 	// Set size for player capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -42,8 +45,7 @@ AOverFluffCharacter::AOverFluffCharacter()
 	TopDownCameraComponent->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	// Create a decal in the world to show the cursor's location
-	CursorToWorld = CreateDefaultSubobject<UDecalComponent>("CursorToWorld");
-	CursorToWorld->SetupAttachment(RootComponent);
+	CursorToWorld = CreateDefaultSubobject<UDecalComponent>("CursorToWorld"); 
 	static ConstructorHelpers::FObjectFinder<UMaterial> DecalMaterialAsset(TEXT("Material'/Game/OverFluff/Blueprints/M_Cursor_Decal.M_Cursor_Decal'"));
 	if (DecalMaterialAsset.Succeeded())
 	{

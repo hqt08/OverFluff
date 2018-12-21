@@ -3,13 +3,14 @@
 #include "OverFluffPlayerController.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Runtime/Engine/Classes/Components/DecalComponent.h"
-#include "HeadMountedDisplayFunctionLibrary.h"
 #include "OverFluffCharacter.h"
 #include "Engine/World.h"
 #include "UnrealNetwork.h"
 #include "DrawDebugHelpers.h"
 #include "NavigationPath.h"
 #include "GameFramework/PawnMovementComponent.h"
+
+#include "OverFluffMovementComponent.h"
 
 AOverFluffPlayerController::AOverFluffPlayerController()
 {
@@ -30,25 +31,14 @@ void AOverFluffPlayerController::PlayerTick(float DeltaTime)
 {
 	Super::PlayerTick(DeltaTime);
 
+	CurrentClickTime += DeltaTime;
+
 	// keep updating the destination every tick while desired
-	if (bMoveToMouseCursor)
+	if (bMoveToMouseCursor && CurrentClickTime > ClickInterval)
 	{
 		MoveToMouseCursor();
+		CurrentClickTime = 0.0f;
 	}
-
-	/*if (GetNetMode() == NM_Client)
-	{
-		if (APawn* const Pawn = GetPawn())
-		{
-			if (UPawnMovementComponent* const MovementComponent = Pawn->GetMovementComponent())
-			{
-				if (MovementComponent->IsMovingOnGround())
-				{
-					SERVER_ValidateMovement();
-				}
-			}
-		}
-	}*/
 }
 
 void AOverFluffPlayerController::SetupInputComponent()
@@ -62,29 +52,10 @@ void AOverFluffPlayerController::SetupInputComponent()
 	// support touch devices 
 	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AOverFluffPlayerController::MoveToTouchLocation);
 	InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AOverFluffPlayerController::MoveToTouchLocation);
-
-	InputComponent->BindAction("ResetVR", IE_Pressed, this, &AOverFluffPlayerController::OnResetVR);
-}
-
-void AOverFluffPlayerController::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
 }
 
 void AOverFluffPlayerController::MoveToMouseCursor()
 {
-	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
-	{
-		if (AOverFluffCharacter* MyPawn = Cast<AOverFluffCharacter>(GetPawn()))
-		{
-			if (MyPawn->GetCursorToWorld())
-			{
-				UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, MyPawn->GetCursorToWorld()->GetComponentLocation());
-			}
-		}
-	}
-	else
-	{
 		// Trace to see what is under the mouse cursor
 		FHitResult Hit;
 		GetHitResultUnderCursor(ECC_Visibility, false, Hit);
@@ -95,7 +66,6 @@ void AOverFluffPlayerController::MoveToMouseCursor()
 			SetNewMoveDestination(Hit.ImpactPoint);
 			SERVER_SetNewMoveDestination(Hit.ImpactPoint);
 		}
-	}
 }
 
 void AOverFluffPlayerController::MoveToTouchLocation(const ETouchIndex::Type FingerIndex, const FVector Location)
@@ -123,6 +93,10 @@ void AOverFluffPlayerController::SetNewMoveDestination(const FVector DestLocatio
 		if ((Distance > 120.0f))
 		{
 			UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, DestLocation);
+			/*if (UOverFluffMovementComponent* const OFMovementComponent = MyPawn->FindComponentByClass<UOverFluffMovementComponent>())
+			{
+				OFMovementComponent->SetMoveToLocation(DestLocation);
+			}*/
 		}
 	}
 }
@@ -184,11 +158,14 @@ void AOverFluffPlayerController::OnSetDestinationReleased()
 void AOverFluffPlayerController::OnRep_CurrentLocation()
 {
 	// Do client-side movement correction OnRep
-	if (APawn* const Pawn = GetPawn())
+	if (bCheckMovementRep)
 	{
-		if (Pawn->GetActorLocation() != CurrentLocation)
+		if (APawn* const Pawn = GetPawn())
 		{
-			Pawn->SetActorLocation(CurrentLocation);
+			if (Pawn->GetActorLocation() != CurrentLocation)
+			{
+				Pawn->SetActorLocation(CurrentLocation);
+			}
 		}
 	}
 }
@@ -196,11 +173,14 @@ void AOverFluffPlayerController::OnRep_CurrentLocation()
 void AOverFluffPlayerController::OnRep_CurrentRotation()
 {
 	// Do client-side movement correction OnRep
-	if (APawn* const Pawn = GetPawn())
+	if (bCheckMovementRep)
 	{
-		if (Pawn->GetActorRotation() != CurrentRotation)
+		if (APawn* const Pawn = GetPawn())
 		{
-			Pawn->SetActorRotation(CurrentRotation);
+			if (Pawn->GetActorRotation() != CurrentRotation)
+			{
+				Pawn->SetActorRotation(CurrentRotation);
+			}
 		}
 	}
 }

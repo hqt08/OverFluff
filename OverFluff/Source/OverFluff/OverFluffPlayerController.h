@@ -20,9 +20,6 @@ protected:
 	virtual void SetupInputComponent() override;
 	// End PlayerController interface
 
-	/** Resets HMD orientation in VR. */
-	void OnResetVR();
-
 	/** Navigate player to the current mouse cursor location. */
 	void MoveToMouseCursor();
 
@@ -57,6 +54,14 @@ protected:
 
 	UPROPERTY(ReplicatedUsing = OnRep_CurrentRotation)
 	FRotator CurrentRotation;
+
+	UPROPERTY(EditAnywhere)
+	float ClickInterval = 0.5f;
+
+	float CurrentClickTime = 0.0f;
+
+	const bool bCheckMovementRep = false;
 };
+
 
 
