@@ -192,9 +192,14 @@ void UOverFluffMovementComponent::ReplayMovementFrames()
 
 void UOverFluffMovementComponent::PerformMovement(float DeltaTime)
 {
-	if (GetOwnerRole() != ROLE_Authority)
-	{   
-		// Main place where the local "blackhole time dilation" effect is happening
+	//if (GetOwnerRole() != ROLE_Authority)
+	//{   
+	//	// Main place where the local "blackhole time dilation" effect is happening
+	//	Velocity = DilationFactor * Velocity;
+	//}
+
+	if (bWantsToShoot)
+	{
 		Velocity = DilationFactor * Velocity;
 	}
 
@@ -203,14 +208,14 @@ void UOverFluffMovementComponent::PerformMovement(float DeltaTime)
 
 void UOverFluffMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed)
 {
-	if (GetOwnerRole() == ROLE_Authority)
-	{
+	/*if (GetOwnerRole() == ROLE_Authority)
+	{*/
 		Super::RequestDirectMove(MoveVelocity, bForceMaxSpeed);
-	}
+	/*}
 	else
 	{
 		Super::RequestDirectMove(MoveVelocity * DilationFactor, bForceMaxSpeed);
-	}
+	}*/
 }
 
 void UOverFluffMovementComponent::CalcVelocity(float DeltaTime, float Friction, bool bFluid, float BrakingDeceleration)
@@ -223,4 +228,72 @@ bool UOverFluffMovementComponent::ClientUpdatePositionAfterServerUpdate()
 	ReplayMovementFrames();
 
 	return Super::ClientUpdatePositionAfterServerUpdate();
+}
+
+/** UOverFluffMovementComponent - Custom Ability Hooks **/
+void UOverFluffMovementComponent::SetShooting(bool bShooting)
+{
+	bWantsToShoot = bShooting;
+}
+
+void UOverFluffMovementComponent::UpdateFromCompressedFlags(uint8 Flags)
+{
+	Super::UpdateFromCompressedFlags(Flags);
+
+	//The Flags parameter contains the compressed input flags that are stored in the saved move.
+	//UpdateFromCompressed flags simply copies the flags from the saved move into the movement component.
+	//It basically just resets the movement component to the state when the move was made so it can simulate from there.
+	bWantsToShoot = (Flags&FSavedMove_Character::FLAG_Custom_0) != 0;
+}
+
+/** FSavedMove_WarpShoot - Custom WarpShoot Ability **/
+void FSavedMove_WarpShoot::SetMoveFor(ACharacter* Character, float InDeltaTime, FVector const& NewAccel, class FNetworkPredictionData_Client_Character& ClientData)
+{
+	Super::SetMoveFor(Character, InDeltaTime, NewAccel, ClientData);
+
+	UOverFluffMovementComponent* CharMov = Cast<UOverFluffMovementComponent>(Character->GetCharacterMovement());
+	if (CharMov)
+	{
+		//This is literally just the exact opposite of UpdateFromCompressed flags. We're taking the input
+		//from the player and storing it in the saved move.
+		bSavedWantsToShoot = CharMov->bWantsToShoot;
+	}
+}
+
+void FSavedMove_WarpShoot::PrepMoveFor(class ACharacter* Character)
+{
+	Super::PrepMoveFor(Character);
+}
+
+void FSavedMove_WarpShoot::Clear()
+{
+	Super::Clear();
+
+	//Clear variables back to their default values.
+	bSavedWantsToShoot = false;
+}
+
+//This is where we compress the flags saved in SetMoveFor. We're basically just ORing a bunch of them together.
+uint8 FSavedMove_WarpShoot::GetCompressedFlags() const
+{
+	uint8 Result = Super::GetCompressedFlags();
+
+	if (bSavedWantsToShoot)
+	{
+		Result |= FLAG_Custom_0;
+	}
+
+	return Result;
+}
+
+bool FSavedMove_WarpShoot::CanCombineWith(const FSavedMovePtr& NewMove, ACharacter* Character, float MaxDelta) const
+{
+	//This pretty much just tells the engine if it can optimize by combining saved moves. There doesn't appear to be
+	//any problem with leaving it out, but it seems that it's good practice to implement this anyways.
+	if (bSavedWantsToShoot != ((FSavedMove_WarpShoot*)&NewMove)->bSavedWantsToShoot)
+	{
+		return false;
+	}
+
+	return Super::CanCombineWith(NewMove, Character, MaxDelta);
 }

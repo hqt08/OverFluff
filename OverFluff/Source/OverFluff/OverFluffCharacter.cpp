@@ -90,3 +90,30 @@ void AOverFluffCharacter::Tick(float DeltaSeconds)
 		}
 	}
 }
+
+void AOverFluffCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
+{
+	check(InputComponent);
+	Super::SetupPlayerInputComponent(InputComponent);
+
+	InputComponent->BindAction("Shoot", IE_Pressed, this, &AOverFluffCharacter::StartShooting);
+	InputComponent->BindAction("Shoot", IE_Released, this, &AOverFluffCharacter::StopShooting);
+}
+
+void AOverFluffCharacter::StartShooting()
+{
+	UOverFluffMovementComponent* MoveComp = Cast<UOverFluffMovementComponent>(GetCharacterMovement());
+	if (MoveComp)
+	{
+		MoveComp->SetShooting(true);
+	}
+}
+
+void AOverFluffCharacter::StopShooting()
+{
+	UOverFluffMovementComponent* MoveComp = Cast<UOverFluffMovementComponent>(GetCharacterMovement());
+	if (MoveComp)
+	{
+		MoveComp->SetShooting(false);
+	}
+}
