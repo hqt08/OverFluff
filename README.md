@@ -4,11 +4,13 @@ This project should run out of the box with Unreal Engine 4.21 (fork it at https
 I customized to allow for simple more useful online subsystem BP functions. Add this to the engine code respectively for the game to run:
 
 In Engine\Plugins\Online\OnlineSubsystemUtils\Source\OnlineSubsystemUtils\Classes\FindSessionsCallbackProxy.h(52):
+
 /* Tammi Tay - 11/13/2018 - Static session search get helper for blueprint read */
 UFUNCTION(BlueprintPure, Category = "Online|Session")
 static FString GetSessionProperty(const FBlueprintSessionResult& Result, const FName& RefKey);
 
 In Engine\Plugins\Online\OnlineSubsystemUtils\Source\OnlineSubsystemUtils\Private\FindSessionsCallbackProxy.cpp(116):
+
 /* Tammi Tay - 11/13/2018 - Static session search get helper for blueprint read */
 FString UFindSessionsCallbackProxy::GetSessionProperty(const FBlueprintSessionResult& Result, const FName& RefKey)
 {
