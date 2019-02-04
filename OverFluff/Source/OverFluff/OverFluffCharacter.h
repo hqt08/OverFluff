@@ -14,10 +14,10 @@ class AOverFluffCharacter : public ACharacter
 public:
 	AOverFluffCharacter(const FObjectInitializer& ObjectInitializer);
 
-	// Called every frame.
+	// Begin Character interface
 	virtual void Tick(float DeltaSeconds) override;
-
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	// End Character interface
 
 	/** Returns TopDownCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetTopDownCameraComponent() const { return TopDownCameraComponent; }
@@ -25,6 +25,9 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns CursorToWorld subobject **/
 	FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
+
+	UFUNCTION(BlueprintCallable)
+	bool GetShootButtonDown();
 
 private:
 	void StartShooting();

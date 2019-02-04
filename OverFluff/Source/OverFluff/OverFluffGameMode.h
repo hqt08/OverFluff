@@ -13,6 +13,17 @@ class AOverFluffGameMode : public AGameModeBase
 
 public:
 	AOverFluffGameMode();
+
+public:
+	UFUNCTION(BlueprintCallable)
+	void CreateMap(const float HeightPerTile, const float WidthPerTile, const int32 TotalTilesX, const int32 TotalTilesY);
+
+	UFUNCTION(BlueprintCallable)
+	class UMapMgr* GetMapManager() const { return MapManager; }
+
+private:
+	UPROPERTY(EditAnywhere, Instanced)
+	class UMapMgr* MapManager;
 };
 
 

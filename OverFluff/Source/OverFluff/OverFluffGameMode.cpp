@@ -1,9 +1,12 @@
 // Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
 #include "OverFluffGameMode.h"
+
+#include "UObject/ConstructorHelpers.h"
+
+#include "MapMgr.h"
 #include "OverFluffPlayerController.h"
 #include "OverFluffCharacter.h"
-#include "UObject/ConstructorHelpers.h"
 
 AOverFluffGameMode::AOverFluffGameMode()
 {
@@ -15,5 +18,13 @@ AOverFluffGameMode::AOverFluffGameMode()
 	if (PlayerPawnBPClass.Class != NULL)
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
+	}
+}
+
+void AOverFluffGameMode::CreateMap(const float HeightPerTile, const float WidthPerTile, const int32 TotalTilesX, const int32 TotalTilesY)
+{
+	if (MapManager)
+	{
+		MapManager->CreateMap(GetWorld(), HeightPerTile, WidthPerTile, TotalTilesX, TotalTilesY);
 	}
 }

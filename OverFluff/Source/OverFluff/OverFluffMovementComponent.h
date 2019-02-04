@@ -8,6 +8,7 @@
 
 #include "OverFluffMovementComponent.generated.h"
 
+class AOverFluffDilationBlob;
 class AOverFluffWaypoint;
 
 /**
@@ -118,6 +119,11 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float DilationFactor = 0.2f;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AOverFluffDilationBlob> BlobClass;
+
+	TWeakObjectPtr<AOverFluffDilationBlob> CurrentBlob;
 
 	TMap<WaypointNode, WaypointPath> SearchFrontier;
 	TMap<WaypointNode, WaypointPath> SPT; //ShortestPathTree

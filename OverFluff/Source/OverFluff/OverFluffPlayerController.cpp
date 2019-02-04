@@ -8,6 +8,7 @@
 #include "UnrealNetwork.h"
 #include "DrawDebugHelpers.h"
 #include "NavigationPath.h"
+#include "NavigationSystem.h"
 #include "GameFramework/PawnMovementComponent.h"
 
 #include "OverFluffMovementComponent.h"
@@ -30,6 +31,21 @@ void AOverFluffPlayerController::GetLifetimeReplicatedProps(TArray< FLifetimePro
 void AOverFluffPlayerController::PlayerTick(float DeltaTime)
 {
 	Super::PlayerTick(DeltaTime);
+
+	if (bFirstTick)
+	{
+		if (IsLocalPlayerController())
+		{
+			// Rebuild navigation after generation map procedually
+			// Not completely sure why unreal's default dynamic nav mesh rebuild doesn't handle this reliably
+			if (UNavigationSystemV1* NavSys = Cast<UNavigationSystemV1>(GetWorld()->GetNavigationSystem()))
+			{
+				NavSys->Build();
+			}
+		}
+
+		bFirstTick = false;
+	}
 
 	CurrentClickTime += DeltaTime;
 
@@ -78,6 +94,7 @@ void AOverFluffPlayerController::MoveToTouchLocation(const ETouchIndex::Type Fin
 	if (HitResult.bBlockingHit)
 	{
 		// We hit something, move there
+		SetNewMoveDestination(HitResult.ImpactPoint);
 		SERVER_SetNewMoveDestination(HitResult.ImpactPoint);
 	}
 }

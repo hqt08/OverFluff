@@ -9,7 +9,10 @@
 #include "DrawDebugHelpers.h"
 #include "NavigationPath.h"
 
+#include "OverFluffAgeComponent.h"
 #include "OverFluffCharacter.h"
+#include "OverFluffDilationBlob.h"
+#include "OverFluffPlayerController.h"
 #include "OverFluffWaypoint.h"
 
 WaypointPath::WaypointPath()
@@ -192,15 +195,19 @@ void UOverFluffMovementComponent::ReplayMovementFrames()
 
 void UOverFluffMovementComponent::PerformMovement(float DeltaTime)
 {
-	//if (GetOwnerRole() != ROLE_Authority)
-	//{   
-	//	// Main place where the local "blackhole time dilation" effect is happening
-	//	Velocity = DilationFactor * Velocity;
-	//}
-
-	if (bWantsToShoot)
+	if (const AOverFluffCharacter* const Pawn = Cast<AOverFluffCharacter>(GetOwner()))
 	{
-		Velocity = DilationFactor * Velocity;
+		if (const AOverFluffPlayerController* const PlayerController = Cast<AOverFluffPlayerController>(Pawn->GetController()))
+		{
+			if (!PlayerController->IsLocalPlayerController())
+			{
+				if (const UOverFluffAgeComponent* const AgeComponent = Pawn->FindComponentByClass<UOverFluffAgeComponent>())
+				{
+					// Main place where the local "blackhole time dilation" effect is happening
+					Velocity = AgeComponent->GetCurrentDilation() * Velocity;
+				}
+			}
+		}
 	}
 
 	Super::PerformMovement(DeltaTime);
@@ -234,6 +241,34 @@ bool UOverFluffMovementComponent::ClientUpdatePositionAfterServerUpdate()
 void UOverFluffMovementComponent::SetShooting(bool bShooting)
 {
 	bWantsToShoot = bShooting;
+
+	if (bWantsToShoot)
+	{
+		if (AOverFluffCharacter* const Pawn = Cast<AOverFluffCharacter>(GetPawnOwner()))
+		{
+			if (const APlayerController* const PlayerController = Cast<APlayerController>(Pawn->GetController()))
+			{
+				FHitResult Hit;
+				PlayerController->GetHitResultUnderCursor(ECC_Visibility, false, Hit);
+
+				if (Hit.bBlockingHit)
+				{
+					if (!CurrentBlob.IsValid())
+					{
+						FActorSpawnParameters SpawnParams;
+						SpawnParams.Instigator = Pawn;
+						CurrentBlob = Pawn->GetWorld()->SpawnActor<AOverFluffDilationBlob>(BlobClass.Get(), Hit.Location, FRotator::ZeroRotator, SpawnParams);
+						CurrentBlob->SetOwner(CurrentBlob.Get());
+					}
+					else
+					{
+						CurrentBlob->SetActorLocation(Hit.Location);
+					}
+				}
+			}
+		}
+
+	}
 }
 
 void UOverFluffMovementComponent::UpdateFromCompressedFlags(uint8 Flags)

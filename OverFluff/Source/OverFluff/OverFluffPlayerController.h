@@ -61,6 +61,8 @@ protected:
 	float CurrentClickTime = 0.0f;
 
 	const bool bCheckMovementRep = false;
+
+	bool bFirstTick = true;
 };
 
 
