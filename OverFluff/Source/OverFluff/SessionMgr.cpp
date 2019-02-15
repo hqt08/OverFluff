@@ -226,7 +226,7 @@ void USessionMgr::OnSearchSessionsComplete(bool bWasSuccessful)
 
 void USessionMgr::DestroySession(const UWorld * World, TSharedPtr<const FUniqueNetId> UserId, FName SessionName)
 {
-	if (IOnlineSubsystem* const OnlineSubsystem = Online::GetSubsystem(World))
+	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get() /*Online::GetSubsystem(World)*/)
 	{
 		IOnlineSessionPtr SessionInterface = OnlineSubsystem->GetSessionInterface();
 		if (SessionInterface.IsValid())
@@ -239,7 +239,7 @@ void USessionMgr::DestroySession(const UWorld * World, TSharedPtr<const FUniqueN
 
 void USessionMgr::OnDestroySessionComplete(FName SessionName, bool bWasSuccessful)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OnDestroySessionsComplete bSuccess: %d"), bWasSuccessful));
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OnDestroySessionsComplete %s, bSuccess: %d"), *SessionName.ToString(), bWasSuccessful));
 
 	if (IOnlineSubsystem* const OnlineSubsystem = IOnlineSubsystem::Get())
 	{
